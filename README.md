@@ -12,9 +12,7 @@ Write the snippet prefix and complete with Tab when selected.
 
 ## Snippets
 
-#### Print to console
-
-`log`
+Read through the [snippets](https://github.com/Messier81/dilithium-snippets/blob/main/snippets/snippets.code-snippets) file.
 
 ###
 
