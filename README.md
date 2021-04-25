@@ -2,15 +2,15 @@
 
 This is a snippets extensions for [Dilithium.js](https://github.com/teacherseat/dilithium.js)
 
-# Requirements
+## Requirements
 
 Only works in coffeescript files. 
 
-# Usage
+## Usage
 
 Write the snippet prefix and complete with Tab when selected.
 
-# Snippets
+## Snippets
 
 ## Standard
 
@@ -23,15 +23,15 @@ log
 
 
 
-# Known Issues
+## Known Issues
 
 None so far.
 
-# Release Notes
+## Release Notes
 
 Users appreciate release notes as you update your extension.
 
-## 1.0.0
+### 1.0.0
 
 Initial release of ...
 
