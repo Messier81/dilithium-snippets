@@ -1,0 +1,27 @@
+{
+  // Standard
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log $1",
+		],
+		"description": "Log output to console."
+	},
+
+  // Intricate
+  "Create an HTML element with a class name": {
+    "prefix": ["m"],
+    "body": ["m '.${1:class name}'"],
+    "description": "A for loop."
+  },
+
+  // Singles
+  "Print handle": {
+    "prefix": "handle",
+    "body": [
+      "handle: '${TM_FILENAME_BASE}'"
+    ],
+    "description": "Insert a handle and make the filename the handle."
+  }
+}
+

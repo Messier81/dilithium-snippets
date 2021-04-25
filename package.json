@@ -1,0 +1,20 @@
+{
+    "name": "dilithium-snippets",
+    "displayName": "Dilithium Snippets",
+    "description": "Snippets for Dilithium.js",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "coffeescript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
