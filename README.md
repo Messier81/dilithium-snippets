@@ -14,9 +14,9 @@ Write the snippet prefix and complete with Tab when selected.
 
 ## Standard
 
-### **Print to console**
+### Print to console
 
-log
+`log`
 
 ###
 
