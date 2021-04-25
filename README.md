@@ -12,7 +12,7 @@ Write the snippet prefix and complete with Tab when selected.
 
 ## Snippets
 
-## Standard
+### Standard
 
 #### Print to console
 
