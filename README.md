@@ -12,8 +12,6 @@ Write the snippet prefix and complete with Tab when selected.
 
 ## Snippets
 
-### Standard
-
 #### Print to console
 
 `log`
