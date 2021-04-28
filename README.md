@@ -1,6 +1,6 @@
 # Dilithium Snippets
 
-This is a snippets extensions for [Dilithium.js](https://github.com/teacherseat/dilithium.js)
+This is a snippets extensions for [Dilithium.js](https://github.com/teacherseat/dilithium.js) that works with custom components.
 
 ## Requirements
 

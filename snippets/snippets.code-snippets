@@ -1,18 +1,90 @@
 {
+  ////////////////////////
+  // dilithium.js
+  ///////////////////////
+
   // Standard
 	"Print to console": {
 		"prefix": "log",
 		"body": [
-			"console.log $1",
+			"console.log '${1:what_to_log}', ${0}",
 		],
 		"description": "Log output to console."
 	},
 
+  "Constructor": {
+		"prefix": "constructor",
+		"body": [
+			"constructor:(args)->\n\tsuper args",
+		],
+		"description": "Class constructor with super."
+	},
+
   // Intricate
-  "Create an HTML element with a class name": {
+  "Create element": {
     "prefix": ["m"],
-    "body": ["m '.${1:class name}'"],
-    "description": "A for loop."
+    "body": ["m '${1:class name}'"],
+    "description": "Create a dilithium.js element."
+  },
+  "Create events": {
+    "prefix": ["event"],
+    "body": [
+      "'${1:route}/${2:action}' : '${1}_${2}_success'",
+      "'${1}/${2}#err' : 'err'",
+      "",
+      "${1}_${2}_success:(data)=>",
+      "\t${0}"
+    ],
+    "description": "Create events success and error with success function."
+  },
+
+  // Tags
+  "Table": {
+    "prefix": "mtable",
+    "body": [
+      "m 'table',",
+      "\tm 'thead',",
+      "\t\tm 'tr',",
+      "\t\t\tm 'th'",
+      "\tm 'tbody',",
+      "\t\tm 'tr',",
+      "\t\t\tm 'td'"
+    ],
+    "description": "Create a HTML table tag in dilithium.js."
+  },
+
+  // Imports 
+  "Import dilithium.js": {
+    "prefix": "idilithium",
+    "body": [
+      "import { m, ${1:param}, ${2:stream} } from 'dilithium-js'"
+    ],
+    "description": "Import m, and/or param, stream from dilithium.js."
+  },
+
+  // Fields
+  "Dilithium Checkbox": {
+    "prefix": "checkbox",
+    "body": [
+      "m Checkbox, handle: '${1:handle}', attribute: ${2:attribute}, label: '${3:${1/(.?)/${1:/upcase}/}}', value: ${4:true}"
+    ],
+    "description": "Import checkbox from dilithium.js fields."
+  },
+  "Dilithium InputText": {
+    "prefix": "input text",
+    "body": [
+      "m InputText, handle: '${1:handle}', attribute: ${2:attribute}"
+      
+    ],
+    "description": "Import input text from dilithium.js fields."
+  },
+  "Dilithium Textarea": {
+    "prefix": "input text",
+    "body": [
+      "m Textarea, handle: '${1:handle}', attribute: ${2:attribute}"
+      
+    ],
+    "description": "Import text area from dilithium.js fields."
   },
 
   // Singles
@@ -22,6 +94,29 @@
       "handle: '${TM_FILENAME_BASE}'"
     ],
     "description": "Insert a handle and make the filename the handle."
-  }
+  },
+
+  ////////////////////////
+  // ts_ui_admin
+  ///////////////////////
+
+  // Imports
+  "Import Api": {
+    "prefix": "iapi",
+    "body": [
+      "import Api from 'services/api'"
+    ],
+    "description": "Import Api."
+  },
+
+  "Import buttons": {
+    "prefix": "ibutton",
+    "body": [
+      "import { ${1|Button,ButtonHardLink,ButtonLink,ButtonReset,ButtonSubmit,BackButton,AddButton,EditButton,PinButton|} } from 'shared/components/button'"
+    ],
+    "description": "Import buttons."
+  },
 }
+
+
 
